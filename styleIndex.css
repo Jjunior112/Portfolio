@@ -146,19 +146,4 @@ footer{
 .footera:active{
     background-color: #41D6D9;
 }
-@media (max-width: 850px){
-   .pt{
-    font: 400 8pt 'Lucida Sans Regular';
-    }
-    nav{
-        display:none;
-    }
-    .contacts>img{
-        font-size: smaller;
-        width: 5%;
-    }
-    img,.pimg1, .pimg2, .pimg3, .pimg4{
-        width: auto;
-    }
-}
 
