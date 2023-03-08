@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1 - Análise de Dados</title>
+    <link rel="stylesheet" href="https://jjunior112.github.io/Portfolio/style.css">
+</head>
+<body>
+    <main>
+        <h1>Análise de Churn em uma empresa de telecomunicação</h1>
+        <section>
+            <h2>Importação das bibliotecas Python</h2>
+            <img src="https://jjunior112.github.io/Portfolio/bibliotecas-pag2.png" alt="">
+        </section>
+        <section>
+            <h2>Importação da base de dados utilizada</h2>
+            <img src="https://jjunior112.github.io/Portfolio/base-pag2.png" alt="">
+        </section>
+        <section>
+            <h2>Visualização dos dados </h2>
+            <img src="https://jjunior112.github.io/Portfolio/tabelaHead-pag2.png" alt="">
+            <h3>Colunas sem valor semântico para a análise</h3>
+            <img src="https://jjunior112.github.io/Portfolio/tabela1-pag2.png" alt="">
+            <img src="https://jjunior112.github.io/Portfolio/tabela2-pag2.png" alt="">
+            <h3>Verificando valores nulos</h3>
+            <img src="https://jjunior112.github.io/Portfolio/nulos-pag2.png" alt="">
+            <p>Além da variável Codigo não ter valor semântico, ela está completamente vazia.</p>
+            <h3>Conferindo os tipos de dados</h3>
+            <img src="https://jjunior112.github.io/Portfolio/tipos_de_dados-pag2.png" alt="">
+            <p>A única variável com tipo de dado incompatível é a de TotalGasto</p>
+        </section>
+        <section>
+            <h2>Tratamento dos dados</h2>
+            <img src="https://jjunior112.github.io/Portfolio/tratamento-pag2.png" alt="">
+            <p>O primeiro passo será excluir as colunas sem valor para a análise. Em seguida a mudança do tipo de dado da variável TotalGasto, usando 'coerce' para os erros, sendo assim caso seja encontrado algum valor impossível de ser alterado, ficará em branco.</p>
+            <p>Para resolver os valores nulos, primeiro foi excluído as colunas que possuíam todos os valores em branco, nessa caso a de Codigos, após isso, as linhas que possuíam algum valor em branco. Esse método foi escolhido devido ao fato de que os valores nulos serem tão irrisórios que não causariam grande impacto se fossem retirados.</p>
+            <h3>Nova conferência dos tipos de dados</h3>
+            <img src="https://jjunior112.github.io/Portfolio/tipos_de_dados2-pag2.png" alt="">
+        </section>
+        <section>
+            <h2>Análise inicial</h2>
+            <p>A hipótese nula do desafio era de que 26% dos clientes dessa empresa estavam dando Churn, sendo assim, a primeira análise será confirmar ou rejeitar essa hipótese.</p>
+            <h3>Contagem dos valores em números absolutos</h3>
+            <img src="https://jjunior112.github.io/Portfolio/valoresAbs-pag2.png" alt="">
+            <h3>Percentual</h3>
+            <img src="https://jjunior112.github.io/Portfolio/valoresPerc-pag2.png" alt="">
+            <p>Confirmada a hipótese nula, será feita uma análise mais detalhada para descobrir possíveis causas para essa porcentagem de Churn.</p>
+        </section>
+        <section>
+            <h2>Análise detalhada</h2>
+            <h3>Geração de gráficos para cada variável em relação ao Churn</h3>
+            <img src="https://jjunior112.github.io/Portfolio/graficos-pag2.png" alt="">
+            <p>A saída desse código gera 19 gráficos, porém poucos deles trazem de fato insights relevantes.</p>
+            <h3>Os gráficos que revelam as possíveis causas são:</h3>
+            <img src="https://jjunior112.github.io/Portfolio/mesesCliente-pag2.png" alt="">
+            <img src="https://jjunior112.github.io/Portfolio/servicoInternet-pag2.png" alt="">
+            <img src="https://jjunior112.github.io/Portfolio/dependentes.png" alt="">
+            <p>* A taxa de Churn é desproporcionalmente maior para os que não possuem dependentes</p>
+            <img src="https://jjunior112.github.io/Portfolio/servicoBackup-pag2.png" alt="">
+            <img src="https://jjunior112.github.io/Portfolio/protecaoEquip-pag2.png" alt="">
+            <img src="https://jjunior112.github.io/Portfolio/suporteTec-pag.png" alt="">
+            <img src="https://jjunior112.github.io/Portfolio/servicoSeguranca-pag2.png" alt="">
+            
+        </section>
+        <section>
+            <h2>Conclusões e Ações</h2>
+            <h3>Conclusões</h3>
+            <ul>
+                <li>Os clientes nos primeiros meses tendem a cancelar mais.</li>
+                <ul>
+                    <li>Pode ser que a experiência nos primeiros meses seja ruim.</li>
+                    <li>Pode ser algum marketing muito agressivo.</li>
+                </ul>
+                <li>Algum problema no serviço de fibra.</li>
+                <li>Clientes que tem familias maiores tendem a cancelar menos.</li>
+                <li>Quanto mais serviço o cliente tem, menos ele cancela.</li>
+                    <ul>
+                        <li>Serviço de backup</li>
+                        <li>Proteção do equipamento</li>
+                        <li>Suporte tecnico</li>
+                        <li>Serviço de segurança</li>
+                    </ul>
+                <li>Quase todos os cancelamentos estão no contrato mensal.</li>
+                <li>No boleto o cancelamento é maior.</li>
+            </ul>
+            <h3>Ações</h3>
+            <ul>
+                <li>Pacotes familiares com preço menor e desconto por quantidade de integrantes.</li>
+                <li>Promoções que dê desconto no primeiro ano de uso.</li>
+                <li>Pacotes que ofereçam desconto quando contratatado vários serviços.</li>
+                <li>Serviços inclusos de maneira gratuita por algum período de tempo</li>
+            
+        </section>
+    </main>
+    <footer>
+    <a href="https://jjunior112.github.io/Portfolio/index.html" class="footera">&lt;&lt;&lt; Página Principal</a>
+    <a href="https://jjunior112.github.io/Portfolio/pag3.html" class="footera">Próximo Projeto &gt;&gt;&gt;</a>
+    </footer>
+</body>
+</html>
