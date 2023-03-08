@@ -1,0 +1,164 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font: 400 16px 'Lucida Sans Regular';
+    line-height: 1.8em;
+}
+.links {
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    margin: 0 auto;
+    width: 160px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+.links:hover{
+    background-color: #00CED1;
+    color:black
+}
+.links:active{
+    background-color: #41D6D9;
+}
+.news{
+    padding: 20px;
+    border: 2px double white;
+    margin: 10px;
+    width: 260px;
+    height: 400px;
+    background-color: transparent;
+    display: inline-table;
+}
+.projects{
+    text-decoration: none;
+}
+.projects:hover{
+    background-color: #00CED1;
+    opacity: 0.60;
+
+
+}
+.projects:active{
+    background-color: #41D6D9;
+}
+.img{
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    opacity: 0.75;
+}
+.redes{
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+
+}
+.redes:hover{
+    color:white;
+    background-color: #00CED1 ;
+}
+.pt{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.border{
+    color: black;
+    background-color: #00CED1;
+    padding: 20px;
+}
+.bordertrans{
+    background-color: transparent;
+}
+section{
+    text-align: center;
+    padding: 50px 80px;
+
+}
+.section-light{
+    background-color: #009B9E;
+    color: black;
+}
+.section-dark{
+    background-color: #005052;
+    color: white;
+}
+.pimg1{
+    background-image: url(https://jjunior112.github.io/Portfolio/foto1-index.jpg);
+    min-height: 100%;
+     /*
+    min-height em % para que a img seja usada em seu tamanho original
+    
+    */
+}
+
+.pimg2{
+    background-image: url(https://jjunior112.github.io/Portfolio/foto2-index.png);
+    min-height: 400px;
+    /*
+    min-height em px para dar o efeito do scroll 
+    */
+}
+.pimg3{
+    background-image: url(https://jjunior112.github.io/Portfolio/foto3-index.png);
+    min-height: 400px;
+}
+.pimg4{
+    background-image: url(https://jjunior112.github.io/Portfolio/foto4-index.jpg);
+    min-height: 400px;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-size: cover;
+    /*
+    Para imagem ocupar todo o espaço da pagina.
+    */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+       /*
+        fixed= parallax
+        scroll= normal
+    */
+
+}
+footer{
+    background-color: #013f41;
+    margin: 0 auto;
+    text-align: center;
+}
+.footera{
+    color:white;
+    text-decoration: none;
+    padding: 7px;
+}
+.footera:hover{
+    background-color: #00CED1;
+}
+.footera:active{
+    background-color: #41D6D9;
+}
+@media (max-width: 850px){
+   .pt{
+    font: 400 8pt 'Lucida Sans Regular';
+    }
+    nav{
+        display:none;
+    }
+    .contacts>img{
+        font-size: smaller;
+        width: 5%;
+    }
+    img,.pimg1, .pimg2, .pimg3, .pimg4{
+        width: auto;
+    }
+}
+
