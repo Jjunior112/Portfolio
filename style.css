@@ -12,6 +12,17 @@ main{
     margin: auto;
     background-color: white;
 }
+a{
+    color:#00CED1;
+    text-decoration: underline;
+    padding: 7px;
+}
+a:hover{
+    color:#013f41;
+}
+a:active{
+    background-color: #41D6D9;
+}
 footer{
     background-color: #013f41;
     margin: 0 auto;
