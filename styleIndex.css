@@ -159,3 +159,13 @@ footer{
     border-radius: 20px;
 }
 
+@media screen and (max-width: 320px){
+    .news{
+        padding: 10px;
+        border: 2px;
+        margin: auto;
+        background-color: transparent;
+        display: inline-block;
+        width: 100%;
+    }
+}
