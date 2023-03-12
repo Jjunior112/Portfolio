@@ -151,11 +151,11 @@ footer{
     width: 10px;
 }
 ::-webkit-scrollbar-track{
-    background-color: #00CED1;
-    border-radius: 30px;
+    background-color: #005052;
+    border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb{
-    background: #005052;
-    border-radius: 30px;
+    background: #00CED1;
+    border-radius: 20px;
 }
 
