@@ -147,3 +147,15 @@ footer{
     background-color: #41D6D9;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #00CED1;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background: #005052;
+    border-radius: 30px;
+}
+
