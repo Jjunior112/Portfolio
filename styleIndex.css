@@ -168,4 +168,64 @@ footer{
         display: inline-block;
         width: 100%;
     }
+    .pt{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .border{
+        color: black;
+        background-color: #00CED1;
+        padding: 10px;
+        min-width: 320px;
+    }
+    .links {
+        display: none;
+    }
+    .pimg1{
+        background-image: url(https://jjunior112.github.io/Portfolio/foto1-index-320.png);
+        min-height: 100%;
+         /*
+        min-height em % para que a img seja usada em seu tamanho original
+        
+        */
+    }
+    
+    .pimg2{
+        background-image: url(https://jjunior112.github.io/Portfolio/foto2-index-320.png);
+        min-height: 320px;
+        /*
+        min-height em px para dar o efeito do scroll 
+        */
+    }
+    .pimg3{
+        background-image: url(https://jjunior112.github.io/Portfolio/foto3-index-320.png);
+        min-height: 320px;
+    }
+    .pimg4{
+        background-image: url(https://jjunior112.github.io/Portfolio/foto4-index-320.png);
+        min-height: 320px;
+    }
+    
+    .pimg1, .pimg2, .pimg3, .pimg4{
+        position: relative;
+        opacity: 0.85;
+        background-position: center;
+        background-size: cover;
+        /*
+        Para imagem ocupar todo o espaço da pagina.
+        */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+           /*
+            fixed= parallax
+            scroll= normal
+        */
+    
+    }
 }
