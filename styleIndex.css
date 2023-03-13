@@ -159,6 +159,7 @@ footer{
     border-radius: 20px;
 }
 
+
 @media screen and (max-width: 320px){
     .news{
         padding: 10px;
@@ -174,7 +175,7 @@ footer{
         width: 100%;
         text-align: center;
         color: black;
-        font-size: 20px;
+        font-size: 15px;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
@@ -190,6 +191,7 @@ footer{
     .pimg1{
         background-image: url(https://jjunior112.github.io/Portfolio/foto1-index-320.png);
         min-height: 100%;
+        min-width: 100%;
          /*
         min-height em % para que a img seja usada em seu tamanho original
         
@@ -198,18 +200,21 @@ footer{
     
     .pimg2{
         background-image: url(https://jjunior112.github.io/Portfolio/foto2-index-320.png);
-        min-height: 320px;
+        min-height: 100%;
+        min-width: 100%;
         /*
         min-height em px para dar o efeito do scroll 
         */
     }
     .pimg3{
         background-image: url(https://jjunior112.github.io/Portfolio/foto3-index-320.png);
-        min-height: 320px;
+        min-height: 100%;
+        min-width: 100%;
     }
     .pimg4{
         background-image: url(https://jjunior112.github.io/Portfolio/foto4-index-320.png);
-        min-height: 320px;
+        min-height: 100%;
+        min-width: 100%;
     }
     
     .pimg1, .pimg2, .pimg3, .pimg4{
@@ -227,5 +232,8 @@ footer{
             scroll= normal
         */
     
+    }
+    .contacts{
+        font-size: 5px;
     }
 }
