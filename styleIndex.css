@@ -160,7 +160,7 @@ footer{
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     .news{
         padding: 10px;
         border: 2px;
@@ -175,7 +175,7 @@ footer{
         width: 100%;
         text-align: center;
         color: black;
-        font-size: 15px;
+        font-size: 18px;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
@@ -234,6 +234,10 @@ footer{
     
     }
     .contacts{
-        font-size: 5px;
+        font-size:40%;
+        
+    }
+    .contacts>img{
+        width: 5%;
     }
 }
