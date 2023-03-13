@@ -160,7 +160,7 @@ footer{
 }
 
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 500px){
     .news{
         padding: 10px;
         border: 2px;
