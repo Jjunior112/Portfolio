@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 3 - Machine Learning</title>
+    <link rel="stylesheet" href="https://jjunior112.github.io/Portfolio/style.css">
+</head>
+<body>
+    <h1></h1>
+    <main>
+        <h1>Modelo de Machine Learning para previsão do tempo em cidades da Austrália</h1>
+        <section>
+            <h2>Bibliotecas Python Utlilizadas</h2>
+            <img src="https://jjunior112.github.io/Portfolio/bibliotecas-pag7.png">
+        </section>
+        <section>
+            <h2>Importação da base de dados utilizada</h2>
+            <img src="https://jjunior112.github.io/Portfolio/base_dados-pag7.png" alt="">
+        </section>
+        <section>
+            <h2>Visualização dos dados</h2>
+            <h3>Visualização da estrutura dos dados</h3>
+            <img src="https://jjunior112.github.io/Portfolio/base_head-pag7.png" alt="">
+            <h3>Visualização das informações das variáveis</h3>
+            <img src="https://jjunior112.github.io/Portfolio/base_info-pag7.png" alt="">
+            <h3>Nulos</h3>
+            <h4>Nulos Gerais</h4>
+            <img src="https://jjunior112.github.io/Portfolio/nulos_gerais-pag7.png" alt="">
+            <h4>Nulos acima de 20k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/nulos_20k-pag7.png" alt="">
+            <h4>Nulos acima de 60k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/nulos_60k-pag7.png" alt="">
+        </section>
+        <section>
+            <h2>Tratamento dos dados</h2>
+            <p>Haverá 3 tipos de tratamento dessa base de dados para aferir a precisão dos modelos</p>
+            <ol>
+                <li>Remover apenas as linhas com algum valor em branco sem remover as colunas com valores nulos.</li>
+                <li>Remover os nulos acima de 20 mil valores e depois as linhas em branco.</li>
+                <li>Remover os nulos acima de 60 mil valores e depois as linhas em branco.</li>
+            </ol>
+            <h3>Primeiro Tratamento</h3>
+            <img src="https://jjunior112.github.io/Portfolio/Linhas_brancas-pag7.png" alt="">
+            <h3>Segundo e terceiro tratamento</h3>
+            <img src="https://jjunior112.github.io/Portfolio/remover_nulos-pag7.png" alt="">
+            <img src="https://jjunior112.github.io/Portfolio/Linhas_brancas-pag7.png" alt="">
+            <h3>Resultados</h3>
+            <h4>Primeiro tratamento</h4>
+            <img src="https://jjunior112.github.io/Portfolio/tratamento1-pag7.png" alt="">
+            <h4>Segundo Tratamento</h4>
+            <img src="https://jjunior112.github.io/Portfolio/tratamento2-pag7.png" alt="">
+            <h4>Terceiro tratamento</h4>
+            <img src="https://jjunior112.github.io/Portfolio/tratamento3-pag7.png" alt="">
+            <h3>Remoção da variável data</h3>
+            <img src="https://jjunior112.github.io/Portfolio/remove_data-pag7.png" alt="">
+        </section>
+        <section>
+            <h2>Preparação das variáveis</h2>
+            <h3>Divisão entre variáveis independentes e dependente</h3>
+            <img src="https://jjunior112.github.io/Portfolio/x_y-pag7.png" alt="">
+            <h3>Conversão das variáveis object para numéricas</h3>
+            <img src="https://jjunior112.github.io/Portfolio/encoder-pag7.png" alt="">
+            <img src="https://jjunior112.github.io/Portfolio/encoder_y-pag7.png" alt="">
+            <h3>Divisão entre treino e teste</h3>
+            <img src="https://jjunior112.github.io/Portfolio/treino_teste-pag7.png" alt="">
+        </section>
+        <section>
+            <h2>Modelos de Machine Learning</h2>
+            <h3>Importação e treino dos modelos de Machine Learning</h3>
+            <img src="https://jjunior112.github.io/Portfolio/modelos-pag7.png" alt="">
+            <h3>Teste dos modelos</h3>
+            <img src="https://jjunior112.github.io/Portfolio/teste_modelo-pag7.png" alt="">
+            <h3>Resultados para cada tratamento</h3>
+            <h4>Sem remover os nulos</h4>
+            <img src="https://jjunior112.github.io/Portfolio/modelo_com_nulos-pag7.png" alt="">
+            <h4>Removendo nulos acima de 20k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/modelo_nulos_20k-pag7.png" alt="">
+            <h4>Removendo nulos acima de 60k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/modelo_nulos_60k-pag7.png" alt="">
+        </section>
+        <section>
+            <h2>Usando ExtraTreeClassifier para seleção de atributos</h2>
+            <h3>Definindo a importância de cada variável</h3>
+            <h4>Sem remover os nulos</h4>
+            <img src="https://jjunior112.github.io/Portfolio/importancia_cm_nulos-pag7.png" alt="">
+            <h4>Removendo nulos acima de 20k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/importancia_nulos_20k-pag7.png" alt="">
+            <h4>Removendo nulos acima de 60k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/importancia_nulos_60k-pag7.png" alt="">
+            <h3>Importando os modelos de Machine Learning</h3>
+            <img src="https://jjunior112.github.io/Portfolio/modelos2-pag7.png" alt="">
+            <h3>Teste dos modelos</h3>
+            <img src="https://jjunior112.github.io/Portfolio/teste_modelo2-pag7.png" alt="">
+            <h3>Novas variáveis para treino e teste</h3>
+            <h4>Sem remover os nulos</h4>
+            <img src="https://jjunior112.github.io/Portfolio/x2_y_nulos-pag7.png" alt="">
+            <h4>Removendo nulos acima de 20k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/x2_y_20k-pag7.png" alt="">
+            <h4>Removendo nulos acima de 60k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/x2_y_60k-pag7.png" alt="">
+
+            <h3>Resultados para cada tratamento</h3>
+            <h4>Sem remover os nulos</h4>
+            <img src="https://jjunior112.github.io/Portfolio/modelo2_com_nulos-pag7.png" alt="">
+            <h4>Removendo nulos acima de 20k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/modelo2_nulos_20k-pag7.png" alt="">
+            <h4>Removendo nulos acima de 60k</h4>
+            <img src="https://jjunior112.github.io/Portfolio/modelo2_nulos_60k-pag7.png" alt="">
+
+        </section>
+        <section>
+            <h2>Considerações sobre os modelos</h2>
+            <h3>Remoção dos nulos</h3>
+            <p>Com a remoção dos nulos, cada modelo reagiu de uma forma, o modelo Random Forest foi o que apresentou melhor desempenho independente da quantidade de dados utilizadas.</p>
+            <h3>Remoção das variáveis com base na importância</h3>
+            <p>Com a remoção de variáveis menos importantes para o modelo, (nesse caso o nivel de importância teve um ponto de corte em 5% ou mais), o modelo de Random Forest também se mostrou mais preciso que os demais usados. </p>
+            <h3>Custo computacional</h3>
+            <p>Levando em conta o custo computacional dos modelos utilizados, o modelo de Random Forest atrelado ao ExtraTreeClassifier seria o de melhor custo X benefício do ponto de vista computacional. Do ponto de vista geral, o modelo mais recomendado seria o Random Forest, porém dessa vez utilizado com todas as variáveis. Embora tendo um custo computacional um pouco maior, apresenta melhores resultados em suas previsões. </p>
+        </section>
+    </main>
+    <footer>
+        <a href="https://jjunior112.github.io/Portfolio/pag6.html" class="footera">&lt;&lt;&lt; Projeto Anterior</a>
+        <a href="https://jjunior112.github.io/Portfolio/index.html" class="footera">Página principal &gt;&gt;&gt;</a>
+    </footer>
+</body>
+</html>
